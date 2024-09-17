@@ -1,0 +1,8 @@
+.button {
+  width: 100%;
+  border-radius: 0%;
+
+  color-scheme: light dark;
+  color: #ff4e88;
+  background-color: #ffbe98;
+}
