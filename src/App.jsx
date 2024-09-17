@@ -6,7 +6,7 @@ function App() {
     <>
       <div className="gameBoard">
         <div className="clickCol">
-          <img className="clickImg" src={heart} alt="Gerador de amor" />
+          <img className="clickImg" src={heart} alt="Gerador de click" />
         </div>
         <div className="sidebar">
           <Sidebar />
