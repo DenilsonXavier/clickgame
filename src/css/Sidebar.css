@@ -4,13 +4,18 @@
 }
 
 .store {
-  flex: 50%;
+  flex: 33%;
   width: 100%;
   margin-top: 0%;
 }
 
 .upgrade {
-  flex: 50%;
+  flex: 33%;
+  width: 100%;
+  margin-top: 0%;
+}
+.reward {
+  flex: 33%;
   width: 100%;
   margin-top: 0%;
 }

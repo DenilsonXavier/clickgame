@@ -1,12 +1,12 @@
-import "./App.css";
+import "./css/App.css";
 import Sidebar from "./sidebar";
-import heart from "./public/heart.svg";
+import ClickCol from "./ClickCol";
 function App() {
   return (
     <>
       <div className="gameBoard">
         <div className="clickCol">
-          <img className="clickImg" src={heart} alt="Gerador de amor" />
+          <ClickCol />
         </div>
         <div className="sidebar">
           <Sidebar />

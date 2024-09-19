@@ -1,0 +1,23 @@
+.itemCell {
+  display: flex;
+  background-color: #b4d6cd;
+  color: crimson;
+  font-weight: bold;
+  align-items: center;
+}
+.itemImage {
+  flex: 10%;
+  height: 9vh;
+}
+.itemName {
+  flex: 20%;
+}
+.itemLevel {
+  flex: 20%;
+}
+.itemPrice {
+  flex: 20%;
+}
+.itemProduction {
+  flex: 20%;
+}

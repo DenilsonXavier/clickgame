@@ -1,0 +1,6 @@
+
+Itens Loja{
+    chocolate de baixa Renda:"A primeira forma de demonstrar amor sendo pobre",
+    Coxinha de Pizza:"",
+    Rosa de papel:"Rosa Fake, porque as de verdade são caras"
+}
