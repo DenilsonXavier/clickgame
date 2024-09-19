@@ -1,6 +1,7 @@
 import "./css/ClickCol.css";
 import heart from "/heart.svg";
 import ClickerLogistic from "./ClickerLogistic";
+
 function ClickCol() {
   return (
     <>
