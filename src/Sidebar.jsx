@@ -34,6 +34,36 @@ function Sidebar() {
           ItemProduction={1}
         />
       </div>
+      <div className="items">
+        <ItemCell
+          ItemId={1}
+          ItemImg="chocolate8bits"
+          ItemName="Chocolate de Baixa renda"
+          ItemPrice={100}
+          ItemLevel={0}
+          ItemProduction={1}
+        />
+      </div>
+      <div className="items">
+        <ItemCell
+          ItemId={1}
+          ItemImg="chocolate8bits"
+          ItemName="Chocolate de Baixa renda"
+          ItemPrice={100}
+          ItemLevel={0}
+          ItemProduction={1}
+        />
+      </div>
+      <div className="items">
+        <ItemCell
+          ItemId={1}
+          ItemImg="chocolate8bits"
+          ItemName="Chocolate de Baixa renda"
+          ItemPrice={100}
+          ItemLevel={0}
+          ItemProduction={1}
+        />
+      </div>
     </>
   );
 }
