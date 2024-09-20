@@ -34,6 +34,7 @@ function ClickCol() {
         onClick={handleImageClick}
         src={heart}
         alt="Gerador de amor"
+        draggable="false"
       />
       <div className="storeItems">
         <ul className="storeItemsLines">
