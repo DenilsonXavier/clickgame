@@ -1,5 +1,6 @@
 import "./css/ClickCol.css";
 import heart from "/heart.svg";
+import showFloatNumber from "./etc/floatNumber";
 import { useState } from "react";
 
 function ClickCol() {
@@ -29,7 +30,15 @@ function ClickCol() {
       <h2 className="heartIndicator">Corações: {clicks.clickAmount}</h2>
       <img
         className="clickImg"
-        onClick={handleClick}
+        onClick={(c) => {
+          handleClick();
+          showFloatNumber(
+            clicks.clickBaseValue * clicks.clickModifier,
+            2000,
+            c.pageX,
+            c.pageY
+          );
+        }}
         src={heart}
         alt="Gerador de amor"
         draggable="false"
