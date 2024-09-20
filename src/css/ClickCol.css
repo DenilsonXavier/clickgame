@@ -4,14 +4,14 @@
   top: 25%;
 
   width: 20%;
-  transition: all 0.2s;
+  transition: all 0.05s;
 }
 .clickImg:hover {
   cursor: pointer;
 }
 .clickImg:active {
-  left: 10%;
-  width: 21%;
+  left: 9%;
+  width: 22%;
 }
 
 .heartIndicator {
