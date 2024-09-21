@@ -1,8 +1,7 @@
 import "./css/ClickCol.css";
 import heart from "/heart.svg";
-// import ClickerLogistic from "./ClickerLogistic";
 import { useState } from "react";
-// var clicks = new ClickerLogistic();
+
 
 function ClickCol() {
   const [clickAmount, setClickAmount] = useState(
