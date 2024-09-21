@@ -1,7 +1,9 @@
 import "./css/ClickCol.css";
 import heart from "/heart.svg";
+
 import showFloatNumber from "./etc/floatNumber";
 import { useState } from "react";
+
 
 function ClickCol() {
   const [clicks, setClicks] = useState({
