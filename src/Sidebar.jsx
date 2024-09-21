@@ -88,6 +88,7 @@ function Sidebar() {
           <Button buttonName="Recompensas" onClick={() => setActiveTab("Recompensas")} />
         </div>
       </div>
+
       {renderContent()}
     </>
   );

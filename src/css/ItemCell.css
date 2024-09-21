@@ -1,6 +1,7 @@
 .itemCell {
   display: flex;
-  background-color: #b4d6cd;
+  background-image: url("./wallpaperStoreItem.jpg");
+  /* background-color: #b4d6cd; */
   color: crimson;
   font-weight: bold;
   align-items: center;
