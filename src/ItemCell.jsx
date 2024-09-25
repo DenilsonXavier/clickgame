@@ -1,26 +1,48 @@
 import "./css/ItemCell.css";
 
-function ItemCell({
+function ItemCellStore({
   ItemId,
   ItemImg,
   ItemName,
   ItemLevel,
   ItemPrice,
   ItemProduction,
+  ItemDescription = "",
 }) {
   return (
-    <div className="itemCell" id={ItemId}>
+    <button className="buttonCell" id={ItemId}>
       <img className="itemImage" src={`./${ItemImg}.png`} alt={ItemName} />
-      <div className="itemName">{ItemName}</div>
-      <div className="itemLevel">Nível: {ItemLevel}</div>
-      <div className="itemPrice">Preço: {ItemPrice} Corações</div>
-      <div className="itemProduction">
-        Gerar: {ItemProduction}
-        <br />
-        Corações/s
+      <div className="itemInfo">
+        <div className="itemName">{ItemName}</div>
+        <div className="itemPrice">{ItemPrice} C</div>
       </div>
-    </div>
+      <div className="itemLevel">{ItemLevel}</div>
+      <div className="tooltiptext">
+        <div className="tooltiptext-group half-border">
+          <div className="flex-6">{ItemName}</div>
+          <div className="flex-4">Custo: {ItemPrice}</div>
+        </div>
+        <div className="tooltiptext-group half-border">
+          <div className="flex-10">
+            Gera: {ItemProduction}/Coração(ões) por segundo
+          </div>
+        </div>
+        <div className="tooltiptext-group">
+          <div className="flex-10">{ItemDescription}</div>
+        </div>
+      </div>
+    </button>
   );
 }
 
-export default ItemCell;
+function ItemCellUpgrades() {
+  return 1;
+}
+function ItemCellRewards() {
+  return 1;
+}
+export {
+  ItemCellStore as ItemCellStore,
+  ItemCellUpgrades as ItemCellUpgrades,
+  ItemCellRewards as ItemCellRewards,
+};

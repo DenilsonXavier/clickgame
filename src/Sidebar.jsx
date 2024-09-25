@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./css/Sidebar.css";
 import "./css/button.css";
-import ItemCell from "./ItemCell";
+import { ItemCellStore } from "./ItemCell";
 
 function Button({ buttonName, onClick }) {
   return (
@@ -14,17 +14,19 @@ function Button({ buttonName, onClick }) {
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("Loja");
 
+  console.log(activeTab);
   const renderContent = () => {
     if (activeTab === "Loja") {
       return (
         <div className="items">
-          <ItemCell
+          <ItemCellStore
             ItemId={1}
             ItemImg="chocolate8bits"
             ItemName="Chocolate de Baixa renda"
             ItemPrice={100}
             ItemLevel={0}
             ItemProduction={1}
+            ItemDescription="A primeira forma de demonstrar amor sendo pobre"
           />
         </div>
       );
@@ -32,7 +34,7 @@ function Sidebar() {
       return (
         <div className="items">
           {/* Itens padrão da aba Atualizações */}
-          <ItemCell
+          <ItemCellStore
             ItemId={2}
             ItemImg="upgradeImg1"
             ItemName="Upgrade de Produção"
@@ -40,7 +42,7 @@ function Sidebar() {
             ItemLevel={0}
             ItemProduction={5}
           />
-          <ItemCell
+          <ItemCellStore
             ItemId={3}
             ItemImg="upgradeImg2"
             ItemName="Melhoria de Eficiência"
@@ -54,7 +56,7 @@ function Sidebar() {
       return (
         <div className="items">
           {/* Itens padrão da aba Recompensas */}
-          <ItemCell
+          <ItemCellStore
             ItemId={4}
             ItemImg="rewardImg1"
             ItemName="Recompensa de Fidelidade"
@@ -62,7 +64,7 @@ function Sidebar() {
             ItemLevel={1}
             ItemProduction={50}
           />
-          <ItemCell
+          <ItemCellStore
             ItemId={5}
             ItemImg="rewardImg2"
             ItemName="Bônus de Tempo"
@@ -82,10 +84,16 @@ function Sidebar() {
           <Button buttonName="Loja" onClick={() => setActiveTab("Loja")} />
         </div>
         <div className="upgrade">
-          <Button buttonName="Atualizações" onClick={() => setActiveTab("Atualizações")} />
+          <Button
+            buttonName="Atualizações"
+            onClick={() => setActiveTab("Atualizações")}
+          />
         </div>
         <div className="reward">
-          <Button buttonName="Recompensas" onClick={() => setActiveTab("Recompensas")} />
+          <Button
+            buttonName="Recompensas"
+            onClick={() => setActiveTab("Recompensas")}
+          />
         </div>
       </div>
 
