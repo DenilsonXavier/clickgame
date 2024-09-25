@@ -1,0 +1,20 @@
+{
+  "itemStore": {
+    "0": {
+      "name": "chocolate de baixa Renda",
+      "level": 0,
+      "price": 100,
+      "production": 1,
+      "description": "Chocolate de baixa renda, ideal para iniciantes."
+    },
+    "1": {
+      "name": "Rosa de papel",
+      "level": 0,
+      "price": 2500,
+      "production": 20,
+      "description": "Rosa Fake, porque as de verdade são caras."
+    }
+  },
+  "itemUpgrades": {},
+  "Rewards": {}
+}

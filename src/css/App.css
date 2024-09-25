@@ -9,7 +9,7 @@
 .clickCol {
   background-image: url("./wallpaper.jpg");
 
-  flex: 65%;
+  flex: 75%;
   width: 100%;
   height: 100%;
 
@@ -24,7 +24,7 @@
   background-image: url("./wallpaperSidebar.jpg");
 
   border-left: solid 1px brown;
-  flex: 35%;
+  flex: 25%;
   width: 100%;
   height: 100%;
 }

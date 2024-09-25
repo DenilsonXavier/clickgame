@@ -1,24 +1,94 @@
-.itemCell {
+.buttonCell {
   display: flex;
+  position: relative;
+
+  padding: 0px;
+  width: 100%;
+
   background-image: url("./wallpaperStoreItem.jpg");
-  /* background-color: #b4d6cd; */
   color: crimson;
   font-weight: bold;
   align-items: center;
 }
+/* tooltip Css */
+.tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #fff;
+
+  color: chocolate;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid brown;
+  border-radius: 6px;
+  pointer-events: none;
+
+  position: absolute;
+  right: 101%;
+  z-index: 1;
+}
+.buttonCell:hover .tooltiptext {
+  content: " ";
+  visibility: visible;
+}
+.buttonCell .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent brown;
+}
+.tooltiptext-group {
+  text-align: center;
+  display: flex;
+  padding: 1%;
+}
+.half-border {
+  border-bottom: 3px solid brown;
+  border-image: linear-gradient(to right, transparent, brown, transparent) 1;
+  margin: 1%;
+}
+
 .itemImage {
   flex: 10%;
-  height: 9vh;
+  height: 10vh;
+}
+.itemInfo {
+  flex: 52%;
+  text-align: left;
+  margin-left: 5%;
 }
 .itemName {
-  flex: 20%;
-}
-.itemLevel {
-  flex: 20%;
+  color: crimson;
+  font-size: 20px;
 }
 .itemPrice {
+  color: green;
+  font-size: 15px;
+}
+.itemLevel {
+  font-size: 25px;
   flex: 20%;
 }
 .itemProduction {
+  flex: 20%;
+}
+
+.flex-10 {
+  flex: 100%;
+}
+.flex-8 {
+  flex: 80%;
+}
+.flex-6 {
+  flex: 60%;
+}
+.flex-4 {
+  flex: 40%;
+}
+.flex-2 {
   flex: 20%;
 }

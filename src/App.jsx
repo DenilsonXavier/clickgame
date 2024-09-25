@@ -1,5 +1,5 @@
 import "./css/App.css";
-import Sidebar from "./sidebar";
+import Sidebar from "./Sidebar";
 import ClickCol from "./ClickCol";
 function App() {
   return (

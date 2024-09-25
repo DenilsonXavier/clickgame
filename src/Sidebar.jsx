@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./css/Sidebar.css";
 import "./css/button.css";
+
 import Button from "./Button";
 import Store from "./Store";
 import Updates from "./Updates";
@@ -9,7 +10,9 @@ import Rewards from "./Reward";
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("Loja");
 
+  console.log(activeTab);
   const renderContent = () => {
+
     switch (activeTab) {
       case "Loja":
         return <Store/>;
@@ -29,10 +32,16 @@ function Sidebar() {
           <Button buttonName="Loja" onClick={() => setActiveTab("Loja")} />
         </div>
         <div className="upgrade">
-          <Button buttonName="Atualizações" onClick={() => setActiveTab("Atualizações")} />
+          <Button
+            buttonName="Atualizações"
+            onClick={() => setActiveTab("Atualizações")}
+          />
         </div>
         <div className="reward">
-          <Button buttonName="Recompensas" onClick={() => setActiveTab("Recompensas")} />
+          <Button
+            buttonName="Recompensas"
+            onClick={() => setActiveTab("Recompensas")}
+          />
         </div>
       </div>
       {renderContent()}
