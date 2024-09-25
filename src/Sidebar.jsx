@@ -10,16 +10,14 @@ import Rewards from "./Reward";
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("Loja");
 
-  console.log(activeTab);
   const renderContent = () => {
-
     switch (activeTab) {
       case "Loja":
-        return <Store/>;
+        return <Store />;
       case "Atualizações":
-        return <Updates/>;
+        return <Updates />;
       case "Recompensas":
-        return <Rewards/>;
+        return <Rewards />;
       default:
         return null;
     }
@@ -44,7 +42,7 @@ function Sidebar() {
           />
         </div>
       </div>
-      {renderContent()}
+      <div className="items-content">{renderContent()}</div>
     </>
   );
 }

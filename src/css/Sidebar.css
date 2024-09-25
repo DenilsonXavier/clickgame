@@ -1,12 +1,21 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .title {
   display: flex;
   width: 100%;
+  height: 12.5%;
 }
 
 .store {
   flex: 33%;
   width: 100%;
   margin-top: 0%;
+}
+.items-content {
+  overflow-y: scroll;
+  height: 87.5%;
 }
 
 .upgrade {

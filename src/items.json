@@ -1,18 +1,76 @@
 {
   "itemStore": {
     "0": {
+      "id": 0,
       "name": "chocolate de baixa Renda",
+      "img": "storeImg1",
       "level": 0,
       "price": 100,
       "production": 1,
       "description": "Chocolate de baixa renda, ideal para iniciantes."
     },
     "1": {
+      "id": 1,
+      "name": "Homen aranha de pelucia",
+      "img": "storeImg2",
+      "level": 0,
+      "price": 100,
+      "production": 1,
+      "description": ""
+    },
+    "2": {
+      "id": 2,
+      "name": "coxinha de pizza",
+      "img": "storeImg3",
+      "level": 0,
+      "price": 100,
+      "production": 1,
+      "description": ""
+    },
+    "3": {
+      "id": 3,
       "name": "Rosa de papel",
+      "img": "storeImg4",
       "level": 0,
       "price": 2500,
       "production": 20,
       "description": "Rosa Fake, porque as de verdade são caras."
+    },
+    "4": {
+      "id": 4,
+      "name": "fabrica de amor",
+      "img": "storeImg5",
+      "level": 0,
+      "price": 2500,
+      "production": 20,
+      "description": ""
+    },
+    "5": {
+      "id": 5,
+      "name": "Cupido",
+      "img": "storeImg6",
+      "level": 0,
+      "price": 2500,
+      "production": 20,
+      "description": ""
+    },
+    "6": {
+      "id": 6,
+      "name": "Flor",
+      "img": "storeImg7",
+      "level": 0,
+      "price": 2500,
+      "production": 20,
+      "description": ""
+    },
+    "7": {
+      "id": 7,
+      "name": "Poção do Amor",
+      "img": "storeImg8",
+      "level": 0,
+      "price": 2500,
+      "production": 20,
+      "description": "A sua venda quase não passou na legislação federal...quase..."
     }
   },
   "itemUpgrades": {},
