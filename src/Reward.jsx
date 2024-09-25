@@ -1,9 +1,9 @@
-import ItemCell from "./ItemCell";
+import { ItemCellRewards } from "./ItemCell";
 
 function Reward() {
   return (
     <div className="items">
-      <ItemCell
+      <ItemCellRewards
         ItemId={21}
         ItemImg="rewardImg1"
         ItemName="Textinho de Amor"
@@ -11,7 +11,7 @@ function Reward() {
         ItemLevel={1}
         ItemProduction={50}
       />
-      <ItemCell
+      <ItemCellRewards
         ItemId={22}
         ItemImg="rewardImg2"
         ItemName="Músicas que me lembra vc"
@@ -19,7 +19,7 @@ function Reward() {
         ItemLevel={1}
         ItemProduction={100}
       />
-      <ItemCell
+      <ItemCellRewards
         ItemId={23}
         ItemImg="rewardImg3"
         ItemName="Gifs"
@@ -27,7 +27,7 @@ function Reward() {
         ItemLevel={1}
         ItemProduction={100}
       />
-      <ItemCell
+      <ItemCellRewards
         ItemId={24}
         ItemImg="rewardImg4"
         ItemName="Nossas fotos"
@@ -35,7 +35,7 @@ function Reward() {
         ItemLevel={1}
         ItemProduction={100}
       />
-      <ItemCell
+      <ItemCellRewards
         ItemId={25}
         ItemImg="rewardImg5"
         ItemName="Supresa"
@@ -44,7 +44,6 @@ function Reward() {
         ItemProduction={100}
       />
     </div>
-
   );
 }
 
