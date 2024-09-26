@@ -11,14 +11,14 @@ function Store() {
 
   return (
     <div className="items">
-      {ItemStore.map((items) => (
+      {ItemStore.map((items, index) => (
         <ItemCellStore
-          ItemId={items.id}
+          ItemId={index}
           ItemImg={items.img}
           ItemName={items.name}
           ItemLevel={items.level}
           ItemPrice={items.price}
-          ItemProduction={items.prodution}
+          ItemProduction={items.production}
           ItemDescription={items.description}
         />
       ))}

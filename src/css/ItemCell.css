@@ -5,51 +5,21 @@
   padding: 0px;
   width: 100%;
 
+  pointer-events: all;
   background-image: url("./wallpaperStoreItem.jpg");
   color: crimson;
   font-weight: bold;
   align-items: center;
 }
-/* tooltip Css */
-.tooltiptext {
-  visibility: hidden;
-  width: 400px;
-  background-color: #fff;
-
-  color: chocolate;
-  text-align: center;
-  padding: 5px 0;
-  border: 1px solid brown;
-  border-radius: 6px;
-  pointer-events: none;
-
-  position: absolute;
-  right: 101%;
-  z-index: 1;
-}
-.buttonCell:hover .tooltiptext {
-  content: " ";
-  visibility: visible;
-}
-.buttonCell .tooltiptext::after {
+.buttonCell::after {
   content: "";
+  display: block;
   position: absolute;
-  top: 50%;
-  left: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent brown;
-}
-.tooltiptext-group {
-  text-align: center;
-  display: flex;
-  padding: 1%;
-}
-.half-border {
-  border-bottom: 3px solid brown;
-  border-image: linear-gradient(to right, transparent, brown, transparent) 1;
-  margin: 1%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
 }
 
 .itemImage {
@@ -71,9 +41,6 @@
 }
 .itemLevel {
   font-size: 25px;
-  flex: 20%;
-}
-.itemProduction {
   flex: 20%;
 }
 

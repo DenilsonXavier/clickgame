@@ -14,8 +14,9 @@
   margin-top: 0%;
 }
 .items-content {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 87.5%;
+  z-index: -2;
 }
 
 .upgrade {

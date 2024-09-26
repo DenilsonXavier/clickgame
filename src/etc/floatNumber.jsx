@@ -2,7 +2,6 @@ import "./floatNumber.css";
 function showFloatNumber(number, duration, positionx, positiony) {
   // Cria um novo elemento div
   const div = document.createElement("div");
-  const r = document.querySelector(":root");
 
   // Adiciona o número ao conteúdo da div
   div.textContent = "+" + number;

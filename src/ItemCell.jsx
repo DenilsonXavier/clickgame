@@ -1,4 +1,6 @@
 import "./css/ItemCell.css";
+import Tooltip from "./etc/tooltip";
+const tooltip = new Tooltip();
 
 function ItemCellStore({
   ItemId,
@@ -10,27 +12,27 @@ function ItemCellStore({
   ItemDescription = "",
 }) {
   return (
-    <button className="buttonCell" id={ItemId}>
+    <button
+      className="buttonCell"
+      id={ItemId}
+      onMouseOver={() => {
+        tooltip.addtooltip(
+          ItemName,
+          ItemPrice,
+          ItemDescription,
+          ItemProduction
+        );
+      }}
+      onMouseLeave={() => {
+        tooltip.removetooltip();
+      }}
+    >
       <img className="itemImage" src={`./${ItemImg}.png`} alt={ItemName} />
       <div className="itemInfo">
         <div className="itemName">{ItemName}</div>
         <div className="itemPrice">{ItemPrice} C</div>
       </div>
       <div className="itemLevel">{ItemLevel}</div>
-      <div className="tooltiptext">
-        <div className="tooltiptext-group half-border">
-          <div className="flex-6">{ItemName}</div>
-          <div className="flex-4">Custo: {ItemPrice}</div>
-        </div>
-        <div className="tooltiptext-group half-border">
-          <div className="flex-10">
-            Gera: {ItemProduction}/Coração(ões) por segundo
-          </div>
-        </div>
-        <div className="tooltiptext-group">
-          <div className="flex-10">{ItemDescription}</div>
-        </div>
-      </div>
     </button>
   );
 }
@@ -39,32 +41,28 @@ function ItemCellUpgrades({
   ItemId,
   ItemImg,
   ItemName,
-  ItemLevel,
+  ItemSold,
   ItemPrice,
-  ItemProduction,
   ItemDescription = "",
 }) {
   return (
-    <button className="buttonCell" id={ItemId}>
+    <button
+      className="buttonCell"
+      id={ItemId}
+      onMouseOver={() => {
+        tooltip.addtooltip(ItemName, ItemPrice, ItemDescription);
+      }}
+      onMouseLeave={() => {
+        tooltip.removetooltip();
+      }}
+    >
       <img className="itemImage" src={`./${ItemImg}.png`} alt={ItemName} />
       <div className="itemInfo">
         <div className="itemName">{ItemName}</div>
         <div className="itemPrice">{ItemPrice} C</div>
       </div>
-      <div className="itemLevel">{ItemLevel}</div>
-      <div className="tooltiptext">
-        <div className="tooltiptext-group half-border">
-          <div className="flex-6">{ItemName}</div>
-          <div className="flex-4">Custo: {ItemPrice}</div>
-        </div>
-        <div className="tooltiptext-group half-border">
-          <div className="flex-10">
-            Gera: {ItemProduction}/Coração(ões) por segundo
-          </div>
-        </div>
-        <div className="tooltiptext-group">
-          <div className="flex-10">{ItemDescription}</div>
-        </div>
+      <div className="itemLevel">
+        {ItemSold == false ? "Disponivel" : "Adquirido"}
       </div>
     </button>
   );
@@ -75,31 +73,25 @@ function ItemCellRewards({
   ItemName,
   ItemLevel,
   ItemPrice,
-  ItemProduction,
   ItemDescription = "",
 }) {
   return (
-    <button className="buttonCell" id={ItemId}>
+    <button
+      className="buttonCell"
+      id={ItemId}
+      onMouseOver={() => {
+        tooltip.addtooltip(ItemName, ItemPrice, ItemDescription);
+      }}
+      onMouseLeave={() => {
+        tooltip.removetooltip();
+      }}
+    >
       <img className="itemImage" src={`./${ItemImg}.png`} alt={ItemName} />
       <div className="itemInfo">
         <div className="itemName">{ItemName}</div>
         <div className="itemPrice">{ItemPrice} C</div>
       </div>
       <div className="itemLevel">{ItemLevel}</div>
-      <div className="tooltiptext">
-        <div className="tooltiptext-group half-border">
-          <div className="flex-6">{ItemName}</div>
-          <div className="flex-4">Custo: {ItemPrice}</div>
-        </div>
-        <div className="tooltiptext-group half-border">
-          <div className="flex-10">
-            Gera: {ItemProduction}/Coração(ões) por segundo
-          </div>
-        </div>
-        <div className="tooltiptext-group">
-          <div className="flex-10">{ItemDescription}</div>
-        </div>
-      </div>
     </button>
   );
 }
