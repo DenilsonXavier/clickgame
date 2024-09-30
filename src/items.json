@@ -4,17 +4,17 @@
       "name": "chocolate de baixa Renda",
       "img": "storeImg1",
       "level": 0,
-      "price": 100,
+      "price": 50,
       "production": 1,
       "productionModifier": 1,
-      "description": "Chocolate de baixa renda, ideal para iniciantes."
+      "description": "Chocolate de baixa renda, ideal para pobres."
     },
     "1": {
       "name": "Homen aranha de pelucia",
       "img": "storeImg2",
       "level": 0,
-      "price": 100,
-      "production": 1,
+      "price": 400,
+      "production": 10,
       "productionModifier": 1,
       "description": ""
     },
@@ -22,8 +22,8 @@
       "name": "coxinha de pizza",
       "img": "storeImg3",
       "level": 0,
-      "price": 100,
-      "production": 1,
+      "price": 5000,
+      "production": 80,
       "productionModifier": 1,
       "description": ""
     },
@@ -70,25 +70,39 @@
       "price": 2500,
       "production": 20,
       "productionModifier": 1,
-      "description": "A sua venda quase não passou na legislação federal...quase..."
+      "description": "A sua venda quase não passou pela legislação federal...quase..."
     }
   },
   "itemUpgrades": {
     "0": {
       "sold": false,
-      "name": "Gotas de Cacau verdadeiro",
-      "img": "upgradeImg1",
-      "price": 100,
-      "effect": 0.3,
-      "effectTo": 0,
-      "description": "Adiciona Cacau de verdade ai chocolate, melhorando sua geração em 30%"
+      "name": "Mouse  Rosa",
+      "img": "mouse/Simple",
+      "price": 200,
+      "requirement": "click",
+      "effect": 2,
+      "effectTo": "click",
+      "description": "Adicionamos um mouse rosa deixando-o mais fofo e gerando o dobro de corações"
     },
     "1": {
       "sold": false,
+      "name": "Gotas de Cacau verdadeiro",
+      "img": "upgradeImg1",
+      "price": 500,
+      "requirement": 0,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 0,
+      "description": "Agora com 3% de cacau, o Chocolate de baixa renda Gera o dobro de amor"
+    },
+    "2": {
+      "sold": false,
       "name": "Articulações mecanicas",
       "img": "upgradeImg2",
-      "price": 100,
-      "effect": 0.3,
+      "price": 7500,
+      "requirement": 1,
+      "requirementLevel": 10,
+      "effect": 2,
       "effectTo": 1,
       "description": "Quando somente pano e almofada não são o suficiente, adicionamos um pedaço de metal e aumentamos o preço em 30%"
     }

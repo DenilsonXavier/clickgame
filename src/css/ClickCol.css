@@ -1,3 +1,7 @@
+:root {
+  --cursor-custom-hover: pointer;
+  --cursor-custom-click: pointer;
+}
 .clickImg {
   position: absolute;
   left: 10%;
@@ -7,9 +11,10 @@
   transition: all 0.05s;
 }
 .clickImg:hover {
-  cursor: pointer;
+  cursor: var(--cursor-custom-hover);
 }
 .clickImg:active {
+  cursor: var(--cursor-custom-click);
   left: 9%;
   width: 22%;
 }

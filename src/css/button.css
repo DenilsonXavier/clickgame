@@ -6,3 +6,9 @@
   color: #ff4e88;
   background-color: #ffbe98;
 }
+.button:hover {
+  cursor: var(--cursor-custom-hover);
+}
+.button:active {
+  cursor: var(--cursor-custom-click);
+}
