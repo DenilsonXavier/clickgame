@@ -11,7 +11,7 @@
 }
 
 .clickCol {
-  background-image: url("./wallpaper.jpg");
+  background-image: url("/wallpaper.jpg");
 
   flex: 40%;
   width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .sidebar {
-  background-image: url("./wallpaperSidebar.jpg");
+  background-image: url("/wallpaperSidebar.jpg");
 
   border-left: solid 1px brown;
   flex: 60%;
