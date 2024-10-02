@@ -2,11 +2,15 @@
   display: flex;
   position: relative;
 
+  height: 5%;
+  max-height: 5%;
+  border-radius: 0%;
   padding: 0px;
   width: 100%;
 
   pointer-events: all;
-  background-image: url("./wallpaperStoreItem.jpg");
+  background-image: repeating-radial-gradient(cyan, rgb(136, 243, 241));
+  /* background-image: url("./wallpaperStoreItem.jpg"); */
   color: crimson;
   font-weight: bold;
   align-items: center;
@@ -22,6 +26,7 @@
   z-index: 100;
 }
 .buttonCell:hover {
+  background-image: repeating-radial-gradient(rgb(234, 250, 114), yellow);
   cursor: var(--cursor-custom-hover);
 }
 .buttonCell:active {
@@ -37,7 +42,7 @@
 }
 .itemName {
   color: crimson;
-  font-size: 20px;
+  font-size: 16px;
 }
 .itemPrice {
   color: green;
@@ -47,7 +52,6 @@
   font-size: 25px;
 }
 .itemStatus {
-  height: 100%;
   text-align: center;
 }
 

@@ -1,4 +1,4 @@
-import { ItemCellRewards } from "./ItemCell";
+import ItemCell from "./ItemCell";
 
 function Reward() {
   return (
