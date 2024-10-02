@@ -1,7 +1,6 @@
 import "./css/App.css";
 import Sidebar from "./Sidebar";
 import ClickCol from "./ClickCol";
-import mouse from "/mouse/Simple.png";
 import * as itemsjson from "./items.json";
 import { useState } from "react";
 const ItemStore = Object.values(itemsjson["itemStore"]);
@@ -28,7 +27,7 @@ function App() {
   const reset = () => {
     localStorage.clear();
     localStorage.setItem("itemStore", JSON.stringify(ItemStore));
-    localStorage.setItem("clickAmount", 10000);
+    localStorage.setItem("clickAmount", 50);
     window.location.reload();
   };
 
@@ -43,7 +42,6 @@ function App() {
         </div>
       </div>
       <div>
-        {mouse}
         <h1>Cheats</h1>
         <button onClick={reset}>Reset</button>
       </div>

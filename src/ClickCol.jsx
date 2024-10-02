@@ -5,6 +5,14 @@ import { useEffect, useState } from "react";
 import Pop from "./etc/popAudio";
 
 function ClickCol() {
+  const [storeAmount, setstoreAmount] = useState(
+    localStorage.getItem("storeAmount")
+      ? parseFloat(localStorage.getItem("storeAmount"))
+      : () => {
+          localStorage.setItem("storeAmount", 0);
+          return 0;
+        }
+  );
   const [clickAmount, setclickAmount] = useState(
     localStorage.getItem("clickAmount")
       ? parseFloat(localStorage.getItem("clickAmount"))
@@ -36,6 +44,7 @@ function ClickCol() {
   localStorage.setItem("clickAmount", parseInt(clickAmount));
   useEffect(() => {
     const timer = setInterval(() => {
+      setstoreAmount(parseInt(localStorage.getItem("storeAmount")));
       setclickAmount(parseInt(localStorage.getItem("clickAmount")));
       setclickModifier(parseInt(localStorage.getItem("clickModifier")));
     }, 100);
@@ -46,7 +55,7 @@ function ClickCol() {
 
   return (
     <>
-      <h2 className="heartIndicator">Corações: {clickAmount}</h2>
+      <h2 className="heartIndicator">Corações: {clickAmount + storeAmount}</h2>
       <img
         className="clickImg"
         onClick={(c) => {
@@ -63,16 +72,6 @@ function ClickCol() {
         alt="Gerador de amor"
         draggable="false"
       />
-      <div className="storeItems">
-        <ul className="storeItemsLines">
-          <li>item 1</li>
-          <li>item 1</li>
-          <li>item 1</li>
-          <li>item 1</li>
-          <li>item 1</li>
-          <li>item 1</li>
-        </ul>
-      </div>
     </>
   );
 }
