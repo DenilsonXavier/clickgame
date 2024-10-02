@@ -73,7 +73,8 @@ export default function ItemCell({ cell }) {
       case "upgrades":
         if (
           ItemUpgrades[id].effectTo == "click" &&
-          ItemUpgrades[id].sold == false
+          ItemUpgrades[id].sold == false &&
+          clickAmount >= ItemUpgrades[id].price
         ) {
           localStorage.setItem(
             "clickModifier",
