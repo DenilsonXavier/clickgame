@@ -27,12 +27,6 @@ export default function ItemCell({ cell }) {
           return BaseItemUpgrades;
         }
   );
-
-  const [clickAmount, setclickAmount] = useState(
-    localStorage.getItem("clickAmount")
-      ? parseFloat(localStorage.getItem("clickAmount"))
-      : 0
-  );
   function changeItemUpgrades(itemUpgrades = null) {
     if (itemUpgrades != null) {
       localStorage.setItem("itemUpgrades", JSON.stringify(itemUpgrades));
@@ -91,15 +85,12 @@ export default function ItemCell({ cell }) {
           clickAmount >= ItemUpgrades[id].price &&
           ItemUpgrades[id].sold == false
         ) {
-          localStorage.setItem(
-            "clickAmount",
-            clickAmount - ItemUpgrades[id].price
-          );
           ItemStore[ItemUpgrades[id].effectTo].productionModifier =
             ItemStore[ItemUpgrades[id].effectTo].productionModifier *
             ItemUpgrades[id].effect;
-
           ItemUpgrades[id].sold = true;
+
+          changeAmount(clickAmount - ItemUpgrades[id].price);
           changeItemUpgrades(ItemUpgrades);
           changeItemStore(ItemStore);
         }
