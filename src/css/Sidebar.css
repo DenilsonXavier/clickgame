@@ -24,6 +24,12 @@
 .items-content {
   display: inline-flex;
   overflow-y: auto;
+  /* background-image: repeating-linear-gradient(
+    to right,
+    rgb(249, 161, 67),
+    #ff9100,
+    rgb(249, 161, 67)
+  ); */
   background-image: url("/wood.jpg");
   width: 100%;
   height: 87.5%;

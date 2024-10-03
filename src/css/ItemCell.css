@@ -26,11 +26,15 @@
   z-index: 100;
 }
 .buttonCell:hover {
-  background-image: repeating-radial-gradient(rgb(234, 250, 114), yellow);
+  background-image: repeating-radial-gradient(rgb(114, 250, 162), #adf802);
   cursor: var(--cursor-custom-hover);
 }
 .buttonCell:active {
   cursor: var(--cursor-custom-click);
+}
+.buttonCell.sold {
+  background-image: repeating-radial-gradient(rgb(209, 250, 114), yellow);
+  cursor: var(--cursor-custom-hover);
 }
 
 .itemImage {

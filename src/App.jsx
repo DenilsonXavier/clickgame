@@ -27,7 +27,7 @@ function App() {
   const reset = () => {
     localStorage.clear();
     localStorage.setItem("itemStore", JSON.stringify(ItemStore));
-    localStorage.setItem("clickAmount", 30000);
+    localStorage.setItem("clickAmount", 550);
     window.location.reload();
   };
 

@@ -16,18 +16,19 @@ function Sidebar() {
         }
   );
   const storeCal = () => {
-    let Amout = 0;
+    let Amount = 0;
     ItemStore.map((items) => {
       if (items.level > 0) {
-        Amout += items.production * items.productionModifier;
+        Amount += items.production * items.productionModifier;
       }
     });
+    localStorage.setItem("amountperSecond", Amount);
     localStorage.getItem("storeAmount")
       ? localStorage.setItem(
           "storeAmount",
-          parseFloat(localStorage.getItem("storeAmount")) + Amout
+          parseFloat(localStorage.getItem("storeAmount")) + Amount
         )
-      : localStorage.setItem("storeAmount", Amout);
+      : localStorage.setItem("storeAmount", Amount);
     setItemStore(JSON.parse(localStorage.getItem("itemStore")));
   };
 

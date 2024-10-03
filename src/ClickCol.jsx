@@ -37,6 +37,14 @@ function ClickCol() {
           return 1;
         }
   );
+  const [AmountPerSecond, setAmountPerSecond] = useState(
+    localStorage.getItem("amountperSecond")
+      ? parseFloat(localStorage.getItem("amountperSecond"))
+      : () => {
+          localStorage.setItem("amountperSecond", 0);
+          return 0;
+        }
+  );
 
   const handleClick = () => {
     setclickAmount(clickAmount + clickBaseValue * clickModifier);
@@ -47,6 +55,7 @@ function ClickCol() {
       setstoreAmount(parseInt(localStorage.getItem("storeAmount")));
       setclickAmount(parseInt(localStorage.getItem("clickAmount")));
       setclickModifier(parseInt(localStorage.getItem("clickModifier")));
+      setAmountPerSecond(parseInt(localStorage.getItem("amountperSecond")));
     }, 100);
     return () => {
       clearInterval(timer);
@@ -55,7 +64,18 @@ function ClickCol() {
 
   return (
     <>
-      <h2 className="heartIndicator">Corações: {clickAmount + storeAmount}</h2>
+      <h2 className="heartIndicator">
+        Corações:{" "}
+        {(clickAmount + storeAmount).toLocaleString("pt-BR", {
+          maximumFractionDigits: 0,
+        })}
+      </h2>
+      <h2 className="heartIndicatorpersecond">
+        Por Segundo:{" "}
+        {AmountPerSecond.toLocaleString("pt-BR", {
+          maximumFractionDigits: 0,
+        })}
+      </h2>
       <img
         className="clickImg"
         onClick={(c) => {

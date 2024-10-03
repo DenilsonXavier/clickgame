@@ -27,6 +27,14 @@
   text-shadow: #fc0 1px 0 10px;
   text-decoration-thickness: 50px;
 }
+.heartIndicatorpersecond {
+  position: absolute;
+  top: 19%;
+  left: 13%;
+
+  text-shadow: #fc0 1px 0 10px;
+  text-decoration-thickness: 50px;
+}
 
 .storeItems {
   position: absolute;

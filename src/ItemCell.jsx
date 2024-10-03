@@ -142,7 +142,12 @@ export default function ItemCell({ cell }) {
                 />
                 <div className="itemInfo f-7">
                   <div className="itemName">{items.name}</div>
-                  <div className="itemPrice">{items.price} C</div>
+                  <div className="itemPrice">
+                    {items.price.toLocaleString("pt-BR", {
+                      maximumFractionDigits: 0,
+                    })}{" "}
+                    C
+                  </div>
                 </div>
                 <div className="itemLevel f-2">{items.level}</div>
               </button>
@@ -162,7 +167,7 @@ export default function ItemCell({ cell }) {
           ) {
             return (
               <button
-                className="buttonCell"
+                className={items.sold ? "buttonCell sold" : "buttonCell"}
                 onMouseEnter={() => {
                   tooltip.addtooltip(
                     items.name,
@@ -188,7 +193,12 @@ export default function ItemCell({ cell }) {
                 />
                 <div className="itemInfo f-5">
                   <div className="itemName">{items.name}</div>
-                  <div className="itemPrice">{items.price} C</div>
+                  <div className="itemPrice">
+                    {items.price.toLocaleString("pt-BR", {
+                      maximumFractionDigits: 0,
+                    })}{" "}
+                    C
+                  </div>
                 </div>
                 <div className="itemStatus f-4">
                   {items.sold ? "Adquirido" : "Disponivel"}

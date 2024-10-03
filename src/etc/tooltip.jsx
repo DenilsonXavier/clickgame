@@ -10,7 +10,12 @@ class Tooltip {
     this.div.innerHTML = renderToString(
       <div className="tooltiptext-group half-border">
         <div className="f-6">{name}</div>
-        <div className="f-4">Custo: {price}</div>
+        <div className="f-4">
+          Custo:{" "}
+          {price.toLocaleString("pt-BR", {
+            maximumFractionDigits: 0,
+          })}
+        </div>
       </div>
     );
     if (production != "") {

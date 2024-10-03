@@ -82,9 +82,20 @@
       "requirement": "click",
       "effect": 2,
       "effectTo": "click",
-      "description": "Adicionamos um mouse rosa deixando-o mais fofo e gerando o dobro de corações"
+      "description": "Adicionamos um mouse rosa deixando-o mais fofo e gerando o dobro de corações no click"
     },
     "1": {
+      "sold": false,
+      "name": "36k de Dpi",
+      "img": "upgradeImg01",
+      "price": 5000,
+      "requirement": 1,
+      "requirementLevel": 1,
+      "effect": 2,
+      "effectTo": "click",
+      "description": "Aumenta o Dpi e gera o dobro de corações no click"
+    },
+    "10": {
       "sold": false,
       "name": "Gotas de Cacau verdadeiro",
       "img": "upgradeImg1",
@@ -95,7 +106,7 @@
       "effectTo": 0,
       "description": "Agora com 3% de cacau, o Chocolate de baixa renda Gera o dobro de amor"
     },
-    "2": {
+    "20": {
       "sold": false,
       "name": "Articulações mecanicas",
       "img": "upgradeImg2",
@@ -106,7 +117,7 @@
       "effectTo": 1,
       "description": "Quando somente pano e almofada não são o suficiente, adicionamos um pedaço de metal e dobramos seu preço"
     },
-    "3": {
+    "30": {
       "sold": false,
       "name": "Molho de Tomate Especial",
       "img": "upgradeImg3",
@@ -117,7 +128,7 @@
       "effectTo": 2,
       "description": "Um mistério gastronômico que muitos se recusam a acreditar, mas que e amado pela Maioria."
     },
-    "4": {
+    "40": {
       "sold": false,
       "name": "Perfume de Rosa",
       "img": "upgradeImg4",
@@ -128,7 +139,7 @@
       "effectTo": 3,
       "description": "Um perfume suave foi adicionado à rosa de papel, aumentando o valor sentimental e dobrando a produção de amor."
     },
-    "5": {
+    "50": {
       "sold": false,
       "name": "Máquinas Modernas",
       "img": "upgradeImg5",
@@ -139,7 +150,7 @@
       "effectTo": 4,
       "description": "Com novas máquinas mais eficientes, a Fábrica de Amor agora produz o dobro de amor!"
     },
-    "6": {
+    "60": {
       "sold": false,
       "name": "Flechas aprimoradas",
       "img": "upgradeImg6",
@@ -150,7 +161,7 @@
       "effectTo": 5,
       "description": "As flechas de Cupido agora são mais precisas, atingindo mais corações e dobrando sua produção de amor."
     },
-    "7": {
+    "70": {
       "sold": false,
       "name": "Coleira de Luxo para Flor",
       "img": "upgradeImg7",
@@ -161,7 +172,7 @@
       "effectTo": 6,
       "description": "Com uma coleira de luxo, Flor agora passeia com ainda mais estilo, conquistando corações em dobro."
     },
-    "8": {
+    "80": {
       "sold": false,
       "name": "Amor Engarrafado Premium",
       "img": "upgradeImg8",
