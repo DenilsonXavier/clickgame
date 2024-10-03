@@ -13,26 +13,26 @@
       "name": "Homen aranha de pelucia",
       "img": "storeImg2",
       "level": 0,
-      "price": 400,
+      "price": 220,
       "production": 10,
       "productionModifier": 1,
-      "description": ""
+      "description": "Uma pelúcia simpática do Homem-Aranha, um herói que salva corações em miniatura."
     },
     "2": {
       "name": "coxinha de pizza",
       "img": "storeImg3",
       "level": 0,
-      "price": 5000,
-      "production": 80,
+      "price": 900,
+      "production": 100,
       "productionModifier": 1,
-      "description": ""
+      "description": "Um mistério gastronômico que muitos se recusam a acreditar, mas que, de alguma forma, continua conquistando corações."
     },
     "3": {
       "name": "Rosa de papel",
       "img": "storeImg4",
       "level": 0,
-      "price": 2500,
-      "production": 20,
+      "price": 3655,
+      "production": 1000,
       "productionModifier": 1,
       "description": "Rosa Fake, porque as de verdade são caras."
     },
@@ -40,43 +40,43 @@
       "name": "fabrica de amor",
       "img": "storeImg5",
       "level": 0,
-      "price": 2500,
-      "production": 20,
+      "price": 14810,
+      "production": 10000,
       "productionModifier": 1,
-      "description": ""
+      "description": "Uma fábrica onde o amor nunca para de ser produzido, 24 horas por dia."
     },
     "5": {
       "name": "Cupido",
       "img": "storeImg6",
       "level": 0,
-      "price": 2500,
-      "production": 20,
+      "price": 59930,
+      "production": 100000,
       "productionModifier": 1,
-      "description": ""
+      "description": "Com sua flecha precisa, Cupido nunca erra o alvo quando se trata de amor."
     },
     "6": {
       "name": "Flor",
       "img": "storeImg7",
       "level": 0,
-      "price": 2500,
-      "production": 20,
+      "price": 242465,
+      "production": 1000000,
       "productionModifier": 1,
-      "description": ""
+      "description": "Flor é uma cadelinha fofa e amorosa que conquista corações com seu carinho incondicional."
     },
     "7": {
       "name": "Poção do Amor",
       "img": "storeImg8",
       "level": 0,
-      "price": 2500,
-      "production": 20,
+      "price": 100000,
+      "production": 10000000,
       "productionModifier": 1,
-      "description": "A sua venda quase não passou pela legislação federal...quase..."
+      "description": "Uma poção poderosa que faz qualquer um se apaixonar perdidamente ao primeiro gole."
     }
   },
   "itemUpgrades": {
     "0": {
       "sold": false,
-      "name": "Mouse  Rosa",
+      "name": "Mouse Rosa",
       "img": "mouse/Simple",
       "price": 200,
       "requirement": "click",
@@ -105,6 +105,72 @@
       "effect": 2,
       "effectTo": 1,
       "description": "Quando somente pano e almofada não são o suficiente, adicionamos um pedaço de metal e aumentamos o preço em 30%"
+    },
+    "3": {
+      "sold": false,
+      "name": "Molho de Tomate Especial",
+      "img": "upgradeImg3",
+      "price": 12000,
+      "requirement": 2,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 2,
+      "description": "Um mistério gastronômico que muitos se recusam a acreditar, mas que e amado pela Maioria."
+    },
+    "4": {
+      "sold": false,
+      "name": "Perfume de Rosa",
+      "img": "upgradeImg4",
+      "price": 16000,
+      "requirement": 3,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 3,
+      "description": "Um perfume suave foi adicionado à rosa de papel, aumentando o valor sentimental e dobrando a produção de amor."
+    },
+    "5": {
+      "sold": false,
+      "name": "Máquinas Modernas",
+      "img": "upgradeImg5",
+      "price": 30000,
+      "requirement": 4,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 4,
+      "description": "Com novas máquinas mais eficientes, a Fábrica de Amor agora produz o dobro de amor!"
+    },
+    "6": {
+      "sold": false,
+      "name": "Flechas aprimoradas",
+      "img": "upgradeImg6",
+      "price": 60000,
+      "requirement": 5,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 5,
+      "description": "As flechas de Cupido agora são mais precisas, atingindo mais corações e dobrando sua produção de amor."
+    },
+    "7": {
+      "sold": false,
+      "name": "Coleira de Luxo para Flor",
+      "img": "upgradeImg7",
+      "price": 120000,
+      "requirement": 6,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 6,
+      "description": "Com uma coleira de luxo, Flor agora passeia com ainda mais estilo, conquistando corações em dobro."
+    },
+    "8": {
+      "sold": false,
+      "name": "Amor Engarrafado Premium",
+      "img": "upgradeImg8",
+      "price": 250000,
+      "requirement": 7,
+      "requirementLevel": 10,
+      "effect": 2,
+      "effectTo": 7,
+      "description": "A poção do amor agora é engarrafada com mais carinho, dobrando sua produção de amor."
     }
   },
   "Rewards": {}
