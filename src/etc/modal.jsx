@@ -1,30 +1,14 @@
-import { renderToReadableStream } from "react-dom/server";
+import { renderToString } from "react-dom/server";
 import "./modal.css";
-class Modal extends React.Component {
-  constructor() {
-    this.div = document.createElement("div");
-    this.div.id = "modal";
-  }
-
+import { createRoot } from "react-dom/client";
+class Modal {
   addModal() {
-    this.div.innerHTML += renderToReadableStream(
-      <div className="modal" onMouseOver={() => tooltip.removetooltip()}>
-        <div className="overlay"></div>
-        <div className="modal-content">
-          <button className="close-modal" onClick={this.removeModal}>
-            fechar
-          </button>
-        </div>
-      </div>
+    document.getElementById("rootmodal").style.visibility = "visible";
+    document.getElementById("modalcontent").innerHTML = renderToString(
+      <>
+        <p>aaaaa</p>
+      </>
     );
-    document.body.appendChild(this.div);
-    document.body.classList.add("active-modal");
-  }
-
-  removeModal() {
-    console.log("aaa");
-    document.body.removeChild(this.div);
-    document.body.classList.remove("active-modal");
   }
 }
 

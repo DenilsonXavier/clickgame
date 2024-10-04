@@ -53,7 +53,25 @@ function Sidebar() {
           <ItemCell cell="rewards" />
         </div>
       </div>
-      <div id="rootmodal"></div>
+      <div className="modal" id="rootmodal" visibility="hidden">
+        <div
+          className="overlay "
+          onClick={() => {
+            document.getElementById("rootmodal").style.visibility = "hidden";
+          }}
+        ></div>
+        <div className="modal-content">
+          <div id="modalcontent"></div>
+          <button
+            className="close-modal"
+            onClick={() => {
+              document.getElementById("rootmodal").style.visibility = "hidden";
+            }}
+          >
+            fechar
+          </button>
+        </div>
+      </div>
     </>
   );
 }

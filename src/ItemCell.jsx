@@ -239,12 +239,7 @@ export default function ItemCell({ cell }) {
             <button
               className="buttonCell"
               onMouseEnter={() => {
-                !modal &&
-                  tooltip.addtooltip(
-                    items.name,
-                    items.price,
-                    items.description
-                  );
+                tooltip.addtooltip(items.name, items.price, items.description);
               }}
               onMouseLeave={() => {
                 tooltip.removetooltip();
