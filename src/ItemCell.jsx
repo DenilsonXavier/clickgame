@@ -1,12 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./css/ItemCell.css";
+import "./modal.css";
 import Tooltip from "./etc/tooltip";
 import * as itemsjson from "./items.json";
 import useInterval from "./etc/useInterval";
+import Modal from "./etc/modal";
 const BaseItemStore = Object.values(itemsjson["itemStore"]);
 const BaseItemUpgrades = Object.values(itemsjson["itemUpgrades"]);
+const BaseItemRewards = Object.values(itemsjson["Rewards"]);
 const tooltip = new Tooltip();
-
+const modal = new Modal();
 export default function ItemCell({ cell }) {
   const [ItemStore, setItemStore] = useState(
     localStorage.getItem("itemStore")
@@ -62,7 +65,6 @@ export default function ItemCell({ cell }) {
           );
           changeItemStore(ItemStore);
         }
-        changeItemUpgrades();
         break;
       case "upgrades":
         if (
@@ -94,6 +96,25 @@ export default function ItemCell({ cell }) {
           changeItemUpgrades(ItemUpgrades);
           changeItemStore(ItemStore);
         }
+        break;
+    }
+  }
+  function rewards(id) {
+    switch (id) {
+      case 0:
+        popup.showPopup();
+        break;
+
+      case 1:
+        console.log("musica");
+        break;
+
+      case 2:
+        console.log("foto");
+        break;
+
+      case 3:
+        console.log("surpresa");
         break;
     }
   }
@@ -210,32 +231,50 @@ export default function ItemCell({ cell }) {
       </div>
     );
   }
-  function ItemCellRewards({
-    ItemId,
-    ItemImg,
-    ItemName,
-    ItemLevel,
-    ItemPrice,
-    ItemDescription = "",
-  }) {
+  function ItemCellRewards() {
     return (
-      <button
-        className="buttonCell"
-        id={ItemId}
-        onMouseOver={() => {
-          tooltip.addtooltip(ItemName, ItemPrice, ItemDescription);
-        }}
-        onMouseLeave={() => {
-          tooltip.removetooltip();
-        }}
-      >
-        <img className="itemImage" src={`./${ItemImg}.png`} alt={ItemName} />
-        <div className="itemInfo">
-          <div className="itemName">{ItemName}</div>
-          <div className="itemPrice">{ItemPrice} C</div>
-        </div>
-        <div className="itemLevel">{ItemLevel}</div>
-      </button>
+      <>
+        {BaseItemRewards.map((items, index) => {
+          return (
+            <button
+              className="buttonCell"
+              onMouseEnter={() => {
+                !modal &&
+                  tooltip.addtooltip(
+                    items.name,
+                    items.price,
+                    items.description
+                  );
+              }}
+              onMouseLeave={() => {
+                tooltip.removetooltip();
+              }}
+              onMouseOver={() => {
+                tooltip.movetooltip();
+              }}
+              onClick={() => {
+                modal.addModal();
+              }}
+              key={index}
+            >
+              <div className="f-1">
+                <img
+                  className="itemImage "
+                  src={`./${items.img}.png`}
+                  alt={items.name}
+                />
+              </div>
+              <div className="itemInfo f-7">
+                <div className="itemName">{items.name}</div>
+                <div className="itemPrice">{items.price} C</div>
+              </div>
+              <div className="f-2">
+                <img className="itemSimbol " src={`./ciclo.png`} />
+              </div>
+            </button>
+          );
+        })}
+      </>
     );
   }
 

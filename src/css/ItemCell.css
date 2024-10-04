@@ -40,6 +40,10 @@
 .itemImage {
   height: 10vh;
 }
+.itemSimbol {
+  max-height: 3vh;
+  max-width: 3vh;
+}
 .itemInfo {
   text-align: left;
   margin-left: 5%;

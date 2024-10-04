@@ -50,9 +50,10 @@ function Sidebar() {
           <ItemCell cell="upgrades" />
         </div>
         <div className="items-col f-33">
-          {/* <ItemCell cell="rewards" /> */}
+          <ItemCell cell="rewards" />
         </div>
       </div>
+      <div id="rootmodal"></div>
     </>
   );
 }

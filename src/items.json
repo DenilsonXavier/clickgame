@@ -13,8 +13,8 @@
       "name": "Homen aranha de pelucia",
       "img": "storeImg2",
       "level": 0,
-      "price": 700,
-      "production": 8,
+      "price": 400,
+      "production": 5,
       "productionModifier": 1,
       "description": "Uma pelúcia simpática do Homem-Aranha, um herói que salva corações em miniatura."
     },
@@ -22,8 +22,8 @@
       "name": "coxinha de pizza",
       "img": "storeImg3",
       "level": 0,
-      "price": 10000,
-      "production": 60,
+      "price": 3500,
+      "production": 20,
       "productionModifier": 1,
       "description": "Um mistério gastronômico que muitos se recusam a acreditar, mas que, de alguma forma, continua conquistando corações."
     },
@@ -31,8 +31,8 @@
       "name": "Rosa de papel",
       "img": "storeImg4",
       "level": 0,
-      "price": 150000,
-      "production": 420,
+      "price": 28000,
+      "production": 80,
       "productionModifier": 1,
       "description": "Rosa Fake, porque as de verdade são caras."
     },
@@ -40,8 +40,8 @@
       "name": "fabrica de amor",
       "img": "storeImg5",
       "level": 0,
-      "price": 2100000,
-      "production": 3000,
+      "price": 225000,
+      "production": 300,
       "productionModifier": 1,
       "description": "Uma fábrica onde o amor nunca para de ser produzido, 24 horas por dia."
     },
@@ -49,8 +49,8 @@
       "name": "Cupido",
       "img": "storeImg6",
       "level": 0,
-      "price": 30000000,
-      "production": 40000,
+      "price": 1800000,
+      "production": 1500,
       "productionModifier": 1,
       "description": "Com sua flecha precisa, Cupido nunca erra o alvo quando se trata de amor."
     },
@@ -89,9 +89,9 @@
       "name": "36k de Dpi",
       "img": "upgradeImg01",
       "price": 5000,
-      "requirement": 1,
+      "requirement": 2,
       "requirementLevel": 1,
-      "effect": 2,
+      "effect": 4,
       "effectTo": "click",
       "description": "Aumenta o Dpi e gera o dobro de corações no click"
     },
@@ -184,5 +184,30 @@
       "description": "A poção do amor agora é engarrafada com mais carinho, dobrando sua produção de amor."
     }
   },
-  "Rewards": {}
+  "Rewards": {
+    "0": {
+      "name": "Cartinha de amor",
+      "img": "rewardImg1",
+      "price": 1,
+      "description": ""
+    },
+    "1": {
+      "name": "Música que me lembram você",
+      "img": "rewardImg2",
+      "price": 1,
+      "description": ""
+    },
+    "2": {
+      "name": "Nossas fotos",
+      "img": "rewardImg4",
+      "price": 1,
+      "description": ""
+    },
+    "3": {
+      "name": "Supresa",
+      "img": "rewardImg5",
+      "price": 1,
+      "description": ""
+    }
+  }
 }
