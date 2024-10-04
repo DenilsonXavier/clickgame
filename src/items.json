@@ -37,13 +37,13 @@
       "description": "Rosa Fake, porque as de verdade são caras."
     },
     "4": {
-      "name": "fabrica de amor",
-      "img": "storeImg5",
+      "name": "Flor",
+      "img": "storeImg7",
       "level": 0,
       "price": 225000,
       "production": 300,
       "productionModifier": 1,
-      "description": "Uma fábrica onde o amor nunca para de ser produzido, 24 horas por dia."
+      "description": "Flor é uma cadelinha fofa e amorosa que conquista corações com seu carinho incondicional."
     },
     "5": {
       "name": "Cupido",
@@ -55,13 +55,13 @@
       "description": "Com sua flecha precisa, Cupido nunca erra o alvo quando se trata de amor."
     },
     "6": {
-      "name": "Flor",
-      "img": "storeImg7",
+      "name": "fabrica de amor",
+      "img": "storeImg5",
       "level": 0,
       "price": 14400000,
       "production": 6000,
       "productionModifier": 1,
-      "description": "Flor é uma cadelinha fofa e amorosa que conquista corações com seu carinho incondicional."
+      "description": "Uma fábrica onde o amor nunca para de ser produzido, 24 horas por dia."
     },
     "7": {
       "name": "Poção do Amor",
@@ -119,14 +119,14 @@
     },
     "30": {
       "sold": false,
-      "name": "Molho de Tomate Especial",
+      "name": "Ketchup e Maionese",
       "img": "upgradeImg3",
       "price": 50000,
       "requirement": 2,
       "requirementLevel": 10,
       "effect": 2,
       "effectTo": 2,
-      "description": "Um mistério gastronômico que muitos se recusam a acreditar, mas que e amado pela Maioria."
+      "description": "Pra deixar Ainda mais saborosa ,e gera o dobro de corações."
     },
     "40": {
       "sold": false,
@@ -139,17 +139,16 @@
       "effectTo": 3,
       "description": "Um perfume suave foi adicionado à rosa de papel, aumentando o valor sentimental e dobrando a produção de amor."
     },
-    "50": {
-      "sold": false,
-      "name": "Máquinas Modernas",
-      "img": "upgradeImg5",
-      "price": 30000,
-      "requirement": 4,
+    "50": {"sold": false,
+      "name": "Coleira de Luxo para Flor",
+      "img": "upgradeImg7",
+      "price": 120000,
+      "requirement": 6,
       "requirementLevel": 10,
       "effect": 2,
-      "effectTo": 4,
-      "description": "Com novas máquinas mais eficientes, a Fábrica de Amor agora produz o dobro de amor!"
-    },
+      "effectTo": 6,
+      "description": "Com uma coleira de luxo, Flor agora passeia com ainda mais estilo, conquistando corações em dobro."
+      },
     "60": {
       "sold": false,
       "name": "Flechas aprimoradas",
@@ -163,14 +162,14 @@
     },
     "70": {
       "sold": false,
-      "name": "Coleira de Luxo para Flor",
-      "img": "upgradeImg7",
-      "price": 120000,
-      "requirement": 6,
+      "name": "Máquinas Modernas",
+      "img": "upgradeImg5",
+      "price": 30000,
+      "requirement": 4,
       "requirementLevel": 10,
       "effect": 2,
-      "effectTo": 6,
-      "description": "Com uma coleira de luxo, Flor agora passeia com ainda mais estilo, conquistando corações em dobro."
+      "effectTo": 4,
+      "description": "Com novas máquinas mais eficientes, a Fábrica de Amor agora produz o dobro de amor!"
     },
     "80": {
       "sold": false,

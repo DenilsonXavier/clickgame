@@ -27,7 +27,7 @@ body.active-modal {
 }
 .modal-content {
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
@@ -44,4 +44,8 @@ body.active-modal {
   top: 10px;
   right: 10px;
   padding: 5px 7px;
+}
+
+.imagem{
+  height: 90vh;
 }
