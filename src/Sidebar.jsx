@@ -58,6 +58,7 @@ function Sidebar() {
           className="overlay "
           onClick={() => {
             document.getElementById("rootmodal").style.visibility = "hidden";
+            document.getElementById("rootmodal").innerHTML = "";
           }}
         ></div>
         <div className="modal-content">
@@ -66,6 +67,7 @@ function Sidebar() {
             className="close-modal"
             onClick={() => {
               document.getElementById("rootmodal").style.visibility = "hidden";
+              document.getElementById("rootmodal").innerHTML = "";
             }}
           >
             fechar
