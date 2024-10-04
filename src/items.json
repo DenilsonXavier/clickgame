@@ -58,8 +58,8 @@
       "name": "Flor",
       "img": "storeImg7",
       "level": 0,
-      "price": 242465,
-      "production": 1000000,
+      "price": 14400000,
+      "production": 6000,
       "productionModifier": 1,
       "description": "Flor é uma cadelinha fofa e amorosa que conquista corações com seu carinho incondicional."
     },
@@ -67,8 +67,8 @@
       "name": "Poção do Amor",
       "img": "storeImg8",
       "level": 0,
-      "price": 100000,
-      "production": 10000000,
+      "price": 115200000,
+      "production": 25000,
       "productionModifier": 1,
       "description": "Uma poção poderosa que faz qualquer um se apaixonar perdidamente ao primeiro gole."
     }
@@ -186,24 +186,28 @@
   },
   "Rewards": {
     "0": {
+      "sold": false,
       "name": "Cartinha de amor",
       "img": "rewardImg1",
       "price": 1,
       "description": ""
     },
     "1": {
+      "sold": false,
       "name": "Música que me lembram você",
       "img": "rewardImg2",
       "price": 1,
       "description": ""
     },
     "2": {
+      "sold": false,
       "name": "Nossas fotos",
       "img": "rewardImg4",
       "price": 1,
       "description": ""
     },
     "3": {
+      "sold": false,
       "name": "Supresa",
       "img": "rewardImg5",
       "price": 1,

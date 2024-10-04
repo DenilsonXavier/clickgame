@@ -30,6 +30,14 @@ export default function ItemCell({ cell }) {
           return BaseItemUpgrades;
         }
   );
+  const [ItemRewards, setItemRewards] = useState(
+    localStorage.getItem("ItemRewards")
+      ? JSON.parse(localStorage.getItem("ItemRewards"))
+      : () => {
+          localStorage.setItem("ItemRewards", JSON.stringify(BaseItemRewards));
+          return BaseItemRewards;
+        }
+  );
   function changeItemUpgrades(itemUpgrades = null) {
     if (itemUpgrades != null) {
       localStorage.setItem("itemUpgrades", JSON.stringify(itemUpgrades));
@@ -95,6 +103,14 @@ export default function ItemCell({ cell }) {
           changeAmount(clickAmount - ItemUpgrades[id].price);
           changeItemUpgrades(ItemUpgrades);
           changeItemStore(ItemStore);
+        }
+        break;
+      case "rewards":
+        if (clickAmount > ItemRewards[id].price) {
+          changeAmount(clickAmount - ItemRewards[id].price);
+          ItemRewards[id].sold = true;
+          localStorage.setItem("ItemRewards", JSON.stringify(ItemRewards));
+          setItemRewards(JSON.parse(localStorage.getItem("ItemRewards")));
         }
         break;
     }
@@ -234,10 +250,10 @@ export default function ItemCell({ cell }) {
   function ItemCellRewards() {
     return (
       <>
-        {BaseItemRewards.map((items, index) => {
+        {ItemRewards.map((items, index) => {
           return (
             <button
-              className="buttonCell"
+              className={items.sold ? "buttonCell sold" : "buttonCell"}
               onMouseEnter={() => {
                 tooltip.addtooltip(items.name, items.price, items.description);
               }}
@@ -248,7 +264,7 @@ export default function ItemCell({ cell }) {
                 tooltip.movetooltip();
               }}
               onClick={() => {
-                modal.addModal(index);
+                items.sold ? modal.addModal(index) : buyItem(index, "rewards");
               }}
               key={index}
             >
