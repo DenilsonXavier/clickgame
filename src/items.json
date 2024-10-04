@@ -139,7 +139,8 @@
       "effectTo": 3,
       "description": "Um perfume suave foi adicionado à rosa de papel, aumentando o valor sentimental e dobrando a produção de amor."
     },
-    "50": {"sold": false,
+    "50": {
+      "sold": false,
       "name": "Coleira de Luxo para Flor",
       "img": "upgradeImg7",
       "price": 911548,
@@ -148,7 +149,7 @@
       "effect": 2,
       "effectTo": 4,
       "description": "Com uma coleira de luxo, Flor agora passeia com ainda mais estilo, conquistando corações em dobro."
-      },
+    },
     "60": {
       "sold": false,
       "name": "Flechas aprimoradas",
@@ -188,28 +189,28 @@
       "sold": false,
       "name": "Cartinha de amor",
       "img": "rewardImg1",
-      "price": 1700,
+      "price": 2000,
       "description": "Receba uma mensagem carinhosa que expressa todo o amor que sinto por você."
     },
     "1": {
       "sold": false,
       "name": "Música que me lembram você",
       "img": "rewardImg2",
-      "price": 14536,
+      "price": 15000,
       "description": "Uma seleção de músicas que sempre me fazem pensar em você e no nosso amor"
     },
     "2": {
       "sold": false,
       "name": "Nossas fotos",
       "img": "rewardImg4",
-      "price": 7356921,
+      "price": 7350000,
       "description": "Desbloqueie fotos especiais que celebram nosso momento mais precioso juntos"
     },
     "3": {
       "sold": false,
       "name": "Supresa",
       "img": "rewardImg5",
-      "price": 653462732,
+      "price": 10000000,
       "description": "Algo inesperado e muito especial! Clique para descobrir"
     }
   }

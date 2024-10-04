@@ -115,25 +115,6 @@ export default function ItemCell({ cell }) {
         break;
     }
   }
-  function rewards(id) {
-    switch (id) {
-      case 0:
-        popup.showPopup();
-        break;
-
-      case 1:
-        console.log("musica");
-        break;
-
-      case 2:
-        console.log("foto");
-        break;
-
-      case 3:
-        console.log("surpresa");
-        break;
-    }
-  }
   function ItemCellStore() {
     return (
       <div className="items">
@@ -278,10 +259,11 @@ export default function ItemCell({ cell }) {
               <div className="itemInfo f-7">
                 <div className="itemName">{items.name}</div>
                 <div className="itemPrice">
-                  {items.price.toLocaleString("pt-BR", {
-                    maximumFractionDigits: 0,
-                  })}{" "}
-                  C
+                  {items.sold
+                    ? "Adquirido"
+                    : items.price.toLocaleString("pt-BR", {
+                        maximumFractionDigits: 0,
+                      }) + "  C"}
                 </div>
               </div>
               <div className="f-2">
