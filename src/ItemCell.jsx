@@ -248,7 +248,7 @@ export default function ItemCell({ cell }) {
                 tooltip.movetooltip();
               }}
               onClick={() => {
-                modal.addModal();
+                modal.addModal(index);
               }}
               key={index}
             >

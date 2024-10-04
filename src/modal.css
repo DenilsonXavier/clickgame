@@ -10,10 +10,7 @@ body.active-modal {
   font-size: 18px;
 }
 
-.modal {
-  visibility: hidden;
-}
-,
+.modal,
 .overlay {
   width: 100vw;
   height: 100vh;
@@ -47,4 +44,8 @@ body.active-modal {
   top: 10px;
   right: 10px;
   padding: 5px 7px;
+}
+
+.hidden {
+  visibility: hidden;
 }

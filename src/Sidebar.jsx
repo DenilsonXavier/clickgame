@@ -53,7 +53,7 @@ function Sidebar() {
           <ItemCell cell="rewards" />
         </div>
       </div>
-      <div className="modal" id="rootmodal" visibility="hidden">
+      <div className="modal hidden" id="rootmodal">
         <div
           className="overlay "
           onClick={() => {

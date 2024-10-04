@@ -1,14 +1,24 @@
 import { renderToString } from "react-dom/server";
 import "./modal.css";
-import { createRoot } from "react-dom/client";
 class Modal {
-  addModal() {
+  addModal(variavel) {
+    let modal;
     document.getElementById("rootmodal").style.visibility = "visible";
-    document.getElementById("modalcontent").innerHTML = renderToString(
-      <>
-        <p>aaaaa</p>
-      </>
-    );
+    switch (variavel) {
+      case 0:
+        modal = renderToString(<div>texto</div>);
+        break;
+      case 1:
+        modal = renderToString(<div>musica</div>);
+        break;
+      case 2:
+        modal = renderToString(<div>fotos</div>);
+        break;
+      case 3:
+        modal = renderToString(<div>videos</div>);
+        break;
+    }
+    document.getElementById("modalcontent").innerHTML = modal;
   }
 }
 
