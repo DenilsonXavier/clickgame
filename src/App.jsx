@@ -28,7 +28,7 @@ function App() {
   const reset = () => {
     localStorage.clear();
     localStorage.setItem("itemStore", JSON.stringify(ItemStore));
-    localStorage.setItem("clickAmount", 550000);
+    localStorage.setItem("clickAmount", 0);
     window.location.reload();
   };
   const resetItems = () => {
@@ -65,11 +65,7 @@ function App() {
           <Sidebar />
         </div>
       </div>
-      <div>
-        <h1>Cheats</h1>
-        <button onClick={reset}>Reset</button>
-        <button onClick={resetItems}>Reset items</button>
-      </div>
+      
     </>
   );
 }

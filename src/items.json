@@ -78,7 +78,7 @@
       "sold": false,
       "name": "Mouse Rosa",
       "img": "mouse/Simple",
-      "price": 200,
+      "price": 250,
       "requirement": "click",
       "effect": 2,
       "effectTo": "click",
@@ -88,7 +88,7 @@
       "sold": false,
       "name": "36k de Dpi",
       "img": "upgradeImg01",
-      "price": 5000,
+      "price": 6000,
       "requirement": 2,
       "requirementLevel": 1,
       "effect": 4,
@@ -99,7 +99,7 @@
       "sold": false,
       "name": "Gotas de Cacau verdadeiro",
       "img": "upgradeImg1",
-      "price": 1000,
+      "price": 1500,
       "requirement": 0,
       "requirementLevel": 10,
       "effect": 2,
@@ -110,7 +110,7 @@
       "sold": false,
       "name": "Articulações mecanicas",
       "img": "upgradeImg2",
-      "price": 13000,
+      "price": 2917,
       "requirement": 1,
       "requirementLevel": 10,
       "effect": 2,
@@ -121,7 +121,7 @@
       "sold": false,
       "name": "Ketchup e Maionese",
       "img": "upgradeImg3",
-      "price": 50000,
+      "price": 15456,
       "requirement": 2,
       "requirementLevel": 10,
       "effect": 2,
@@ -132,7 +132,7 @@
       "sold": false,
       "name": "Perfume de Rosa",
       "img": "upgradeImg4",
-      "price": 16000,
+      "price": 114570,
       "requirement": 3,
       "requirementLevel": 10,
       "effect": 2,
@@ -142,18 +142,18 @@
     "50": {"sold": false,
       "name": "Coleira de Luxo para Flor",
       "img": "upgradeImg7",
-      "price": 120000,
-      "requirement": 6,
+      "price": 911548,
+      "requirement": 4,
       "requirementLevel": 10,
       "effect": 2,
-      "effectTo": 6,
+      "effectTo": 4,
       "description": "Com uma coleira de luxo, Flor agora passeia com ainda mais estilo, conquistando corações em dobro."
       },
     "60": {
       "sold": false,
       "name": "Flechas aprimoradas",
       "img": "upgradeImg6",
-      "price": 60000,
+      "price": 7283298,
       "requirement": 5,
       "requirementLevel": 10,
       "effect": 2,
@@ -164,18 +164,18 @@
       "sold": false,
       "name": "Máquinas Modernas",
       "img": "upgradeImg5",
-      "price": 30000,
-      "requirement": 4,
+      "price": 58257328,
+      "requirement": 6,
       "requirementLevel": 10,
       "effect": 2,
-      "effectTo": 4,
+      "effectTo": 6,
       "description": "Com novas máquinas mais eficientes, a Fábrica de Amor agora produz o dobro de amor!"
     },
     "80": {
       "sold": false,
       "name": "Amor Engarrafado Premium",
       "img": "upgradeImg8",
-      "price": 250000,
+      "price": 466049544,
       "requirement": 7,
       "requirementLevel": 10,
       "effect": 2,
@@ -188,29 +188,29 @@
       "sold": false,
       "name": "Cartinha de amor",
       "img": "rewardImg1",
-      "price": 1,
-      "description": ""
+      "price": 1700,
+      "description": "Receba uma mensagem carinhosa que expressa todo o amor que sinto por você."
     },
     "1": {
       "sold": false,
       "name": "Música que me lembram você",
       "img": "rewardImg2",
-      "price": 1,
-      "description": ""
+      "price": 14536,
+      "description": "Uma seleção de músicas que sempre me fazem pensar em você e no nosso amor"
     },
     "2": {
       "sold": false,
       "name": "Nossas fotos",
       "img": "rewardImg4",
-      "price": 1,
-      "description": ""
+      "price": 7356921,
+      "description": "Desbloqueie fotos especiais que celebram nosso momento mais precioso juntos"
     },
     "3": {
       "sold": false,
       "name": "Supresa",
       "img": "rewardImg5",
-      "price": 1,
-      "description": ""
+      "price": 653462732,
+      "description": "Algo inesperado e muito especial! Clique para descobrir"
     }
   }
 }
