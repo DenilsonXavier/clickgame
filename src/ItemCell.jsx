@@ -277,7 +277,12 @@ export default function ItemCell({ cell }) {
               </div>
               <div className="itemInfo f-7">
                 <div className="itemName">{items.name}</div>
-                <div className="itemPrice">{items.price} C</div>
+                <div className="itemPrice">
+                  {items.price.toLocaleString("pt-BR", {
+                    maximumFractionDigits: 0,
+                  })}{" "}
+                  C
+                </div>
               </div>
               <div className="f-2">
                 <img className="itemSimbol " src={`./ciclo.png`} />
