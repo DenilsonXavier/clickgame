@@ -23,12 +23,6 @@ function App() {
       "url('/mouse/Simple-click.png'), auto"
     );
   }
-  const rewards = JSON.parse(localStorage.getItem("ItemRewards"));
-  rewards.map((items, index) => {
-    rewards[index].price = ItemRewards[index].price;
-  });
-  localStorage.setItem("ItemRewards", JSON.stringify(rewards));
-
   return (
     <>
       <div className="gameBoard">
