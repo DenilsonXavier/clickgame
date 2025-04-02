@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./css/ItemCell.css";
-import "./modal.css";
 import Tooltip from "./etc/tooltip";
 import * as itemsjson from "./items.json";
 import useInterval from "./etc/useInterval";
