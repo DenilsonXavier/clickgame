@@ -17,7 +17,7 @@ class Modal {
         modal = renderToString(
           <div>
             <a
-              href="https://open.spotify.com/"
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"
               target="_blank"
               rel="noopener noreferrer"
             >
