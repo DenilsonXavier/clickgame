@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./css/Sidebar.css";
 
 import useInterval from "./etc/useInterval";
@@ -53,7 +53,7 @@ function Sidebar() {
           <ItemCell cell="rewards" />
         </div>
       </div>
-      <div className="modal hidden" id="rootmodal">
+      <div className="modal" id="rootmodal" hidden>
         <div
           className="overlay "
           onClick={() => {

@@ -1,5 +1,4 @@
 import "./css/ClickCol.css";
-
 import showFloatNumber from "./etc/floatNumber";
 import { useEffect, useState } from "react";
 import Pop from "./etc/popAudio";

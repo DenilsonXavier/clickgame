@@ -1,10 +1,7 @@
 import "./css/App.css";
 import Sidebar from "./Sidebar";
 import ClickCol from "./ClickCol";
-import * as itemsjson from "./items.json";
 import { useState } from "react";
-const ItemRewards = Object.values(itemsjson["Rewards"]);
-
 function App() {
   const [ItemUpgrades] = useState(
     localStorage.getItem("itemUpgrades")
